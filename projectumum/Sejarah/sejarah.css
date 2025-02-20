@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: hsla(0, 100%, 83%, 0.808);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.era {
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+
+.era h2 {
+    margin-top: 0;
+}
+
+.era p {
+    margin-bottom: 10px;
+}
+
+.era strong {
+    font-weight: bold;
+}

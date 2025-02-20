@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <style>
+        :root{
+    --pink:#e84393;
+
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    /* overflow-x: hidden; */
+}
+
+
+section{
+    padding:2rem 9%;
+}
+
+ header{
+    position: fixed;
+    top: 0%; left: 0%; right: 0%;
+    background:white ;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1) 
+}
+
+header .logo{
+   font-size: 3rem;
+   color: rgb(88, 85, 85);
+   font-weight: bolder; 
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0  1.5rem;
+    color:rgb(88, 85, 85);
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header #toggler{
+    display: none;
+
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:rgb(88, 85, 85);
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,.1);
+    display: none;
+}
+nav ul  {
+   list-style: none;
+   display: flex;
+}
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #ffe6f0, #fff5fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .contact-section {
+            position: relative;
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-section h2 {
+            color: #ff6b88;
+            font-size: 26px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .contact-section p {
+            color: #777;
+            margin-bottom: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ffd1e1;
+            border-radius: 10px;
+            font-size: 14px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .contact-section input:focus,
+        .contact-section textarea:focus {
+            outline: none;
+            border-color: #ff6b88;
+        }
+
+        .contact-section button {
+            background: #ff6b88;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-section button:hover {
+            background-color: #e05572;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">Portofolio <span>.</span></a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="personal.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="certificate.html">certificate</a></li>
+                <li><a href="contact.html">contact</a></li>
+                </ul>
+            
+        </nav>
+
+    </header>
+    <section class="contact-section">
+        <h2>Hubungi saya</h2>
+        <p>Kirim pesan kepada kami, kami senang mendengarnya!</p>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" rows="4" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+</body>
+</html>
